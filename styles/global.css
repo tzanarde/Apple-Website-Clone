@@ -138,7 +138,7 @@ main .series-section span {
     letter-spacing: 0.23px;
 }
 
-main .product-section h2 {
+main .main-product-section h2 {
     color: var(--text-dark);
     font-size: 3rem;
     font-weight: bold;
@@ -146,7 +146,7 @@ main .product-section h2 {
     letter-spacing: -0.28px;              /* Space between the letters*/
 }
 
-main .product-section p {
+main .main-product-section p {
     color: var(--text-dark);
     font-size: 1.5rem;
     font-weight: lighter;
@@ -155,14 +155,14 @@ main .product-section p {
     margin-bottom: 1rem;
 }
 
-main .product-section .link-wrapper {
+main .main-product-section .link-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 25px;
 }
 
-main .product-section .text-wrapper {
+main .main-product-section .text-wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);          /* It pulls the element X% of the element size to a side, since we are using the property left,
@@ -171,4 +171,60 @@ main .product-section .text-wrapper {
     flex-direction: column;
     align-items: center;
     margin-top: 51px;
+}
+
+main .secundary-product-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .secundary-product-section h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    letter-spacing: -0.28px;              /* Space between the letters*/
+}
+
+main .secundary-product-section p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    line-height: 1.6rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 0.5rem;
+}
+
+main .secundary-product-section .link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+main .secundary-product-section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);          /* It pulls the element X% of the element size to a side, since we are using the property left,
+                                             otherwise it would be placed almost at the center, not exactly at the center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+main .secundary-product-section .product-section-dark,
+main .secundary-product-section .product-section-light {
+    border-style: solid;
+    border-color: var(--text-light);
+    border-width: 8px;
+}
+
+main .secundary-product-section .product-section-dark h2,
+main .secundary-product-section .product-section-dark p {
+    color: var(--text-light);
+}
+
+main .secundary-product-section .product-section-light h2,
+main .secundary-product-section .product-section-light p {
+    color: var(--text-dark);
 }
