@@ -1,0 +1,36 @@
+:root {
+    --bg-primary: #000000;
+    --text-light: #ffffff;
+    --title-primary-color: #f5f5f7;
+    --subtitle-color: #6e6e73;
+    --action-color: #2997ff
+}
+
+header {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    height: fit-content;                  /* The minimum size to fit all the elements inside */
+    opacity: 0.9;
+    position: sticky;                     /* Header fixed on a specific position on the screen, even when scrolling */
+    top: 0;                               /* Position where the sticky element is going to be placed */
+    z-index: 1                            /* Positiong the element on the Z axis */;
+    padding: 12px 0;
+}
+
+header nav ul {
+    margin: 0 auto;                       /* No margins on the top and the bottom, and automatic calculated margins on the sides */
+    width: fit-content;                   /* The minimum size to fit all the elements inside */
+    display: flex;
+    align-items: center;
+    gap: 1rem;                            /* Space between the items */
+    padding: 0 2rem;
+}
+
+header nav ul li {
+    min-height: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
