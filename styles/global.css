@@ -2,10 +2,12 @@
     --bg-primary: #000000;
     --text-light: #ffffff;
     --text-dark: #1d1d1f;
+    --normal-text-color: #424245;
     --title-primary-color: #f5f5f7;
     --subtitle-color: #6e6e73;
     --action-color: #2997ff;
     --series-poster-color: #ded2b9;
+    --divider-color: #D2D2D7;
 }
 
 header {
@@ -227,4 +229,65 @@ main .secundary-product-section .product-section-dark p {
 main .secundary-product-section .product-section-light h2,
 main .secundary-product-section .product-section-light p {
     color: var(--text-dark);
+}
+
+footer {
+    background-color: var(--title-primary-color);
+    padding: 15px;
+}
+
+footer .footer-menu {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .footer-menu .sub-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+footer nav ul {
+    width: 196px;
+    margin-bottom: 15px;
+}
+
+footer nav ul li {
+    min-height: fit-content;
+    height: fit-content;
+    font-size: 12px;
+    cursor: pointer;
+    list-style: none;
+    color: var(--normal-text-color);
+    margin-bottom: 6px;
+}
+
+footer .menu-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.divider {
+    width: 80%;
+    border-bottom-color: var(--divider-color);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin: 30px auto;
+}
+
+footer p {
+    font-size: 9px;
+    color: var(--subtitle-color);
+    margin-bottom: 12px;
+}
+
+footer .footer-subtitle {
+    width: 80%;
+    margin: 0 auto;
 }
