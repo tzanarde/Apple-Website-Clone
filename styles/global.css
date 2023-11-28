@@ -34,3 +34,56 @@ header nav ul li {
     cursor: pointer;
     list-style: none;
 }
+
+main section {
+    text-align: center;
+}
+
+main section h1 {
+    color: var(--title-primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    letter-spacing: -0.28px;              /* Space between the letters*/
+}
+
+main section h2 {
+    color: var(--subtitle-color);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 1rem;
+}
+
+main section sup {
+    font-size: 0.9rem;
+}
+
+main section a {
+    color: var(--action-color);
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main section a:hover {
+    text-decoration: underline;
+}
+
+main section .text-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);          /* It pulls the element X% of the element size to a side, since we are using the property left,
+                                             otherwise it would be placed almost at the center, not exactly at the center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+}
