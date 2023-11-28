@@ -3,7 +3,8 @@
     --text-light: #ffffff;
     --title-primary-color: #f5f5f7;
     --subtitle-color: #6e6e73;
-    --action-color: #2997ff
+    --action-color: #2997ff;
+    --series-poster-color: #ded2b9;
 }
 
 header {
@@ -35,11 +36,23 @@ header nav ul li {
     list-style: none;
 }
 
-main section {
-    text-align: center;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-main section h1 {
+main section {
+    text-align: center;
+    position: relative;
+}
+
+main section img {
+    width: 100%;
+    height: auto;
+}
+
+main .hero-section h1 {
     color: var(--title-primary-color);
     font-size: 3rem;
     font-weight: bold;
@@ -47,7 +60,7 @@ main section h1 {
     letter-spacing: -0.28px;              /* Space between the letters*/
 }
 
-main section h2 {
+main .hero-section h2 {
     color: var(--subtitle-color);
     font-size: 1.5rem;
     font-weight: lighter;
@@ -56,11 +69,11 @@ main section h2 {
     margin-bottom: 1rem;
 }
 
-main section sup {
+main .hero-section sup {
     font-size: 0.9rem;
 }
 
-main section a {
+main .hero-section a {
     color: var(--action-color);
     line-height: 1.8rem;
     font-size: 1.2rem;
@@ -68,11 +81,11 @@ main section a {
     cursor: pointer;
 }
 
-main section a:hover {
+main .hero-section a:hover {
     text-decoration: underline;
 }
 
-main section .text-wrapper {
+main .hero-section .text-wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);          /* It pulls the element X% of the element size to a side, since we are using the property left,
@@ -83,7 +96,43 @@ main section .text-wrapper {
     margin-top: 51px;
 }
 
-main section img {
+main .series-section > div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .series-section > div:last-child {
+    bottom: 50px;
+}
+
+main .series-section > div:first-child {
+    top: 105px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    max-width: 60%;
+}
+
+main .series-section > div:first-child p {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--series-poster-color);
+    letter-spacing: -0.6px;
+}
+
+main .series-section p {
+    color: var(--title-primary-color);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.11px;
+}
+
+main .series-section span {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    display: block;
+    letter-spacing: 0.23px;
 }
